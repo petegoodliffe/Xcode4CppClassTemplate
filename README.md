@@ -23,6 +23,8 @@ This project comes with a very simple install script so you be up and running in
 
 The template is installed under C/C++ in the obvious place in the "New file" sheet.
 
+For your peice of mind, the script runs a number of sanity checks prior to installation, to make sure that it's not going to install gibberish once you've given it root access.
+
 ## Why do I have to enter my password?
 
 
