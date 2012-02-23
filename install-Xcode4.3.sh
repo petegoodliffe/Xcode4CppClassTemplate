@@ -8,9 +8,9 @@
 #------------------------------------------------------------------------------
 # Configuration
 
-XCODE_APP=/Applications/Xcode.app
-XCODE_VERSION=4.3
-XCODE_TEMPLATES_DIR="$XCODE_APP/Contents/Developer//Library/Xcode/Templates/File Templates/C and C++/"
+: ${XCODE_APP:=/Applications/Xcode.app}
+: ${XCODE_VERSION:=4.3}
+: ${XCODE_TEMPLATES_DIR:="$XCODE_APP/Contents/Developer/Library/Xcode/Templates/File Templates/C and C++/"}
 
 #------------------------------------------------------------------------------
 # Functions
