@@ -30,7 +30,7 @@ abort()
 # Polite verbosity
 
 echo "========================================================================"
-echo "Xcode 4.3 C++ class template install script"
+echo "Xcode $XCODE_VERSION C++ class template install script"
 echo "   by Pete Goodliffe"
 echo
 echo "   This script is supplied with no guarantee. Please use it at your"
@@ -57,20 +57,19 @@ read
 XCODE_PLIST=$XCODE_APP/Contents/Info.plist
 TEMPLATE_DIR="C++ Class.xctemplate"
 
-[ -d $XCODE_APP ] || abort "Xcode app bundle not found"
+[ -d $XCODE_APP ]   || abort "Xcode app bundle not found"
 [ -f $XCODE_PLIST ] || abort "Xcode Info.plist not found"
 
-XCODE_PLIST_VERSION=$( defaults read $XCODE_PLIST CFBundleShortVersionString)
+XCODE_PLIST_VERSION=$(defaults read $XCODE_PLIST CFBundleShortVersionString)
 
 [ "X$XCODE_PLIST_VERSION" == "X$XCODE_VERSION" ] || abort "Xcode installation is not version $XCODE_VERSION"
-
-[ -d "$TEMPLATE_DIR" ] || abort "Can't find the template. Are you running from the right directory?"
-[ -d "$XCODE_TEMPLATES_DIR" ] || abort "Xcode templates directory not found"
+[ -d "$TEMPLATE_DIR" ]                           || abort "Can't find the template. Are you running from the right directory?"
+[ -d "$XCODE_TEMPLATES_DIR" ]                    || abort "Xcode templates directory not found"
 
 #------------------------------------------------------------------------------
 # Installing
 
-# Yes, this is all there is to it
+# Yes, this is all there is to it...
 sudo cp -r "$TEMPLATE_DIR" "$XCODE_TEMPLATES_DIR/"
 
 #------------------------------------------------------------------------------
