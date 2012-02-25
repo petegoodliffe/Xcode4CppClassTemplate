@@ -6,6 +6,11 @@
 
 This project fills a simple gap that is embarrassingly missing from Xcode 4: the ability to create a whole C++ class, with header file and implementation file.
 
+The template comes with options to add:
+* A virtual destructor
+* Hidden copy/assignment operations (making the class non-copyable)
+* A public base class
+
 *C++ Xcode 4 users, rejoice!*
 
 ## How to install
@@ -23,7 +28,7 @@ This project comes with a very simple install script so you be up and running in
 
 The template is installed under C/C++ in the obvious place in the "New file" sheet.
 
-For your peice of mind, the script runs a number of sanity checks prior to installation, to make sure that it's not going to install gibberish once you've given it root access.
+For your piece of mind, the script runs a number of sanity checks prior to installation, to make sure that it's not going to install gibberish once you've given it root access.
 
 ## Why do I have to enter my password?
 

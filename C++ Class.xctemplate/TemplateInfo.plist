@@ -10,15 +10,11 @@
 	<key>DefaultCompletionName</key>
 	<string>MyClass</string>
 	<key>Description</key>
-	<string>A C++ class, with implementation and header files.</string>
+	<string>A C++ class, with implementation and header files. With optional virtual destructor, and hidden copy/assign operations.</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>MainTemplateFile</key>
 	<string>___FILEBASENAME___.cpp</string>
-	<key>SortOrder</key>
-	<string>1</string>
-	<key>Summary</key>
-	<string>A C++ class with a header</string>
 	<key>Options</key>
 	<array>
 		<dict>
@@ -35,6 +31,49 @@
 			<key>Type</key>
 			<string>text</string>
 		</dict>
+		<dict>
+			<key>Default</key>
+			<string>None</string>
+			<key>Description</key>
+			<string>What class to subclass in the new file</string>
+			<key>Identifier</key>
+			<string>cppSubclass</string>
+			<key>Name</key>
+			<string>Subclass of</string>
+			<key>Required</key>
+			<false/>
+			<key>Type</key>
+			<string>combo</string>
+			<key>Values</key>
+			<array>
+				<string>None</string>
+				<string>Other</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>false</string>
+			<key>Identifier</key>
+			<string>VirtualDestructor</string>
+			<key>Name</key>
+			<string>Virtual destructor</string>
+			<key>Type</key>
+			<string>checkbox</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>false</string>
+			<key>Identifier</key>
+			<string>NonCopyable</string>
+			<key>Name</key>
+			<string>Non copyable</string>
+			<key>Type</key>
+			<string>checkbox</string>
+		</dict>
 	</array>
+	<key>SortOrder</key>
+	<string>1</string>
+	<key>Summary</key>
+	<string>A C++ class with a header</string>
 </dict>
 </plist>
