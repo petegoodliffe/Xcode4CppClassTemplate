@@ -7,6 +7,7 @@
 This project fills a simple gap that is embarrassingly missing from Xcode 4: the ability to create a whole C++ class, with header file and implementation file.
 
 The template comes with options to add:
+
 * A virtual destructor
 * Hidden copy/assignment operations (making the class non-copyable)
 * A public base class
