@@ -10,7 +10,7 @@
 
 : ${XCODE_APP:=/Applications/Xcode.app}
 : ${XCODE_VERSION:=4.3}
-: ${XCODE_TEMPLATES_DIR:="$XCODE_APP/Contents/Developer/Library/Xcode/Templates/File Templates/C and C++/"}
+: ${XCODE_TEMPLATES_DIR:="$HOME/Library/Developer/Xcode/Templates/File Templates/C and C++/"}
 
 #------------------------------------------------------------------------------
 # Functions
@@ -42,14 +42,8 @@ echo
 
 echo "About to install the template."
 echo
-echo "This will ask for your password in order to write to a "
-echo "protected directory."
-echo
-echo "If you are happy to proceed, press return now."
-echo "Otherwise, hit ctrl-c to abort..."
-echo
 
-read
+mkdir -p "$XCODE_TEMPLATES_DIR"
 
 #------------------------------------------------------------------------------
 # Checking
@@ -70,7 +64,7 @@ XCODE_PLIST_VERSION=$(defaults read $XCODE_PLIST CFBundleShortVersionString)
 # Installing
 
 # Yes, this is all there is to it...
-sudo cp -r "$TEMPLATE_DIR" "$XCODE_TEMPLATES_DIR/"
+cp -r "$TEMPLATE_DIR" "$XCODE_TEMPLATES_DIR/"
 
 #------------------------------------------------------------------------------
 # Done
