@@ -19,10 +19,7 @@ The template comes with options to add:
 This project comes with a very simple install script so you be up and running in moments.
 
 * **cd** into the repository directory
-* Depending on the Xcode version you're running, type:
-    * **./install-Xcode4.3.2.sh**, or
-    * **./install-Xcode4.3.sh**, or
-    * **./install-Xcode4.2.sh**
+* Run **./install.sh**
 * Restart Xcode
 * Enjoy the ability to create C++ classes in one operation
 

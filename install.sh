@@ -56,7 +56,9 @@ TEMPLATE_DIR="C++ Class.xctemplate"
 
 XCODE_PLIST_VERSION=$(defaults read $XCODE_PLIST CFBundleShortVersionString)
 
-[ "X$XCODE_PLIST_VERSION" == "X$XCODE_VERSION" ] || abort "Xcode installation is not version $XCODE_VERSION (it is $XCODE_PLIST_VERSION)"
+# This check is not actually necessary, removing
+#[ "X$XCODE_PLIST_VERSION" == "X$XCODE_VERSION" ] || abort "Xcode installation is not version $XCODE_VERSION (it is $XCODE_PLIST_VERSION)"
+
 [ -d "$TEMPLATE_DIR" ]                           || abort "Can't find the template. Are you running from the right directory?"
 [ -d "$XCODE_TEMPLATES_DIR" ]                    || abort "Xcode templates directory not found"
 
