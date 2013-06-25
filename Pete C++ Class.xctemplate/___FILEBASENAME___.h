@@ -1,6 +1,6 @@
 //==============================================================================
 // ___FILENAME___
-// Copyright ___YEAR___ Akai Professional. All rights reserved.
+// Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //==============================================================================
 
 #pragma once
