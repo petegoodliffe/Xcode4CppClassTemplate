@@ -1,12 +1,18 @@
 #Xcode 4 C++ Class Template
 
 * by Pete Goodliffe
-* &copy; 2012 Pete Goodliffe
-* 2012-02-23
+* &copy; 2013 Pete Goodliffe
+* 2013-06-25
 
-This project fills a simple gap that is embarrassingly missing from Xcode 4: the ability to create a whole C++ class, with header file and implementation file.
+This project originally filled a simple gap that was embarrassingly missing from Xcode 4: the ability to create a whole C++ class, with header file and implementation file. Although Xcode 4 _does_ now include such a template, it doesn't have all the facilities I provided.
 
-The template comes with options to add:
+In addition, I include a selection of other missing templates:
+
+* A single **C++ File** without header (Xcode provides _C File_ and _Header File_, but not a plain-old C++ file. )
+* A **Catch Unit Test** file. This is for use with the excellent Catch unit test library. The template includes a smoketest test.
+* A simplified **C++ Class**. This has a file header that is somewhat simpler and less verbose that the Xcode default.
+
+The C++ class template comes with options to add:
 
 * A virtual destructor
 * Hidden copy/assignment operations (making the class non-copyable)
