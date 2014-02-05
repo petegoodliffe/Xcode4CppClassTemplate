@@ -7,8 +7,8 @@
 
 #include "catch.hpp"
 
-TEST_CASE("___FILEBASENAME___/smoketest", "")
+TEST_CASE("___FILEBASENAME___/smoketest")
 {
-    REQUIRE(false);
+    CHECK(false);
 }
 
