@@ -1,10 +1,10 @@
-#Xcode 4 C++ Class Template
+#Xcode 4/5 C++ Class Template
 
 * by Pete Goodliffe
-* &copy; 2013 Pete Goodliffe
-* 2013-06-25
+* &copy; 2013-2014 Pete Goodliffe
+* 2014-03-07
 
-This project originally filled a simple gap that was embarrassingly missing from Xcode 4: the ability to create a whole C++ class, with header file and implementation file. Although Xcode 4 _does_ now include such a template, it doesn't have all the facilities I provided.
+This project originally filled a simple gap that was embarrassingly missing from Xcode 4: the ability to create a whole C++ class, with header file and implementation file. Although Xcode 5 _does_ now include such a template, it doesn't have all the facilities I provided.
 
 In addition, I include a selection of other missing templates:
 
