@@ -5,7 +5,7 @@
 
 #include "___FILEBASENAME___.h"
 
-#include "catch.hpp"
+#include <catch.hpp>
 
 TEST_CASE("___FILEBASENAME___/smoketest")
 {
